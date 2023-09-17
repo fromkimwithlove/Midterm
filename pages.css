@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lexend:wght@100;400&display=swap");
+
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Lexend', sans-serif;*/
+/*Global Styles */
+
+:root {
+  --dark: #81573c;
+  --light: #fef4e1;
+  --light-accent: #f1a6a3;
+  --dark-accent: #f45d6b;
+  --brand: #5dabac;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  background-color: var(--brand);
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Lexend", sans-serif;
+  color: var(--light);
+}
+.center-title {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 3rem;
+}
+section {
+  width: 80%;
+  margin: auto;
+  padding: 50px;
+  border-radius: 45px;
+}
+/* Nav Bar */
+nav {
+  position: sticky;
+  top: 0;
+  font-family: "Open-sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+ul {
+  background: transparent;
+  list-style-type: none;
+  margin: 0;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+}
+li a {
+  display: block;
+  color: var(--light-accent);
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+li a:hover {
+  background-color: var(--light-accent);
+  color: var(--dark-accent);
+}
+
+a {
+  float: left;
+}
+.logo {
+  float: center;
+  text-align: center;
+  padding: 18px 20px;
+  font-size: 1.5rem;
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Dancing Script", cursive;
+  color: var(--light);
+}
+.float-right {
+  font-family: "Limelight", serif;
+  float: right;
+  text-align: center;
+  padding: 18px 20px;
+  font-size: 1.4rem;
+  color: var(--light-accent);
+  text-shadow: -1px 1px 1px black;
+  transform: scale(1, 1.2);
+}
+/* card */
+.card,
+.card-mid,
+.card-bottom {
+  max-width: 1000px;
+  max-height: 500px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  background-color: var(--light-accent);
+  border: 5px solid var(--light);
+  border-radius: 45px;
+  box-shadow: -9px 15px 7px rgba(0, 0, 0, 0.5);
+}
+.card img,
+.card-mid img,
+.card-bottom img {
+  border-radius: 45px;
+  max-width: 500px;
+}
+p::first-letter {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+}
+p {
+  padding: 50px;
+  line-height: 2rem;
+  text-align: left;
+}
+.card-mid,
+.card-bottom {
+  display: flex;
+  width: 1200px;
+  padding: 50px;
+  overflow-x: hidden;
+  margin: auto;
+}
+.card-content {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Flavors Page */
+.title {
+  padding: 25px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.row {
+  width: 70%;
+  margin: auto;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+figcaption.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  figure img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  figure img {
+    width: 150px;
+  }
+}
+
+/* Contact Page */
+.container-form,
+.directions {
+  border-radius: 25px;
+  background-color: var(--light);
+  padding: 10px;
+  font-family: "Lexend", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.container-form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-side {
+  float: left;
+  padding: 15px;
+  width: 40%;
+}
+.right-side {
+  float: right;
+  width: 40%;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: "Lexend", sans-serif;
+}
+
+input[type="submit"] {
+  background-color: var(--brand);
+  color: var(--light);
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+input[type="submit"]:hover {
+  background-color: var(--dark-accent);
+  color: var(--light);
+}

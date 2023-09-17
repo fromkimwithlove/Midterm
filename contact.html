@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages.css">
+    <title>Homestead Creamery</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/flavors.html">Flavors</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li class="float-right">TEL: 555-555-3333</li>
+                <li class="logo">Homestead Creamery</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="title">
+            <h2>Contact Us</h2>
+            <h3>Drop by for a scoop or leave us a message.</h3>
+        </div>
+        <div class="container-form">
+            <div class="left-side">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.1518210168974!2d-119.80048122409478!3d36.766925169574456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8094675bd152d5ed%3A0xf61ca9c09d4ebbde!2sFresno%20City%20College!5e0!3m2!1sen!2sus!4v1694939739477!5m2!1sen!2sus"
+                    width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="right-side">
+                <form>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email address">
+                    <textarea id="subject" name="subject" placeholder="Leave your question or comment here.."
+                        style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="title">
+            <div class="container-form">
+                <div class="directions">
+                    <form action="//www.google.com/maps">
+                        <label for="from">Get Directions</label>
+                        <input type="text" id="saddr" name="saddr" placeholder="Your starting location">
+                        <input type="hidden" id="daddr" name="daddr" placeholder="To" value="Fresno City College">
+                        <input type="submit" value="Plan Now">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
